@@ -1,0 +1,14 @@
+<template>
+  <require from="../resources/elements/google-signin-button"></require>
+  <section>
+    <div class="container-fluid">
+      <div class="row" style="height:300px;"></div>
+      <div class="row">
+        <center>
+          <label for=""> ${message} </label>
+          <google-signin-button client-id.bind="googleSigninClientID" message.two-way="message" authenticated.bind="isAuthenticated" authorized.bind="isAuthorized"> </google-signin-button>
+        </center>
+      </div>
+    </div>
+  </section>
+</template>
